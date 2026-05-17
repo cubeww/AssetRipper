@@ -52,7 +52,7 @@ public sealed class DummyShaderTextExporter : ShaderExporterBase
 		if (shader.Has_ParsedForm())
 		{
 			writer.Write($"Shader \"{shader.ParsedForm.Name}\" {{\n");
-			Export(shader.ParsedForm.PropInfo, writer);
+			ExportProperties(shader.ParsedForm.PropInfo, writer);
 
 			TemplateShader templateShader = TemplateList.GetBestTemplate(shader);
 			writer.Write("\t//DummyShaderTextExporter\n");
@@ -98,7 +98,7 @@ public sealed class DummyShaderTextExporter : ShaderExporterBase
 		return true;
 	}
 
-	private static void Export(ISerializedProperties _this, TextWriter writer)
+	internal static void ExportProperties(ISerializedProperties _this, TextWriter writer)
 	{
 		writer.WriteIndent(1);
 		writer.Write("Properties {\n");

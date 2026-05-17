@@ -11,7 +11,7 @@ public enum ShaderExportMode
 	/// </summary>
 	Yaml,
 	/// <summary>
-	/// Export as decompiled HLSL
+	/// Export extracted shader source when possible
 	/// </summary>
 	Decompile
 }
