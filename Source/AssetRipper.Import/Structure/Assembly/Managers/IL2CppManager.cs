@@ -40,7 +40,7 @@ public sealed class IL2CppManager : BaseManager
 		new MethodOverrideNameFixer(),
 	];
 
-	public static AsmResolverDllOutputFormatDefault DefaultOutputFormat { get; } = new();
+	public static AsmResolverDllOutputFormatThrowNull DefaultOutputFormat { get; } = new();
 
 	public static List<Cpp2IlProcessingLayer>? RecoveryProcessingLayers { get; set; }
 

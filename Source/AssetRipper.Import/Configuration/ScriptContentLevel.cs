@@ -11,7 +11,7 @@ public enum ScriptContentLevel
 	/// </summary>
 	Level1,
 	/// <summary>
-	/// This level is the default. It has full methods for Mono games and empty methods for IL2Cpp games.
+	/// This level is the default. It has full methods for Mono games and throwing methods for IL2Cpp games.
 	/// </summary>
 	Level2,
 	/// <summary>
